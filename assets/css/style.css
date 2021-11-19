@@ -151,6 +151,7 @@ header nav ul li a:hover {
 
 .about h2 {
     color: var(--color-1);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .about img {
@@ -266,3 +267,8 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 /* END OF CONTACT ME SECTION */
+
+.project-1 img {
+    height: 300px;
+    width: 600px;
+}
