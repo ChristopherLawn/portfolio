@@ -21,15 +21,49 @@ section {
     padding: 40px;
 }
 
-.section-title {
+/* .format {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+} */
+
+.about-aside {
+    flex: 0 0 77%;
+}
+
+.project-aside {
+    flex: 0 0 77%;
+}
+
+.contact-aside {
+    flex: 0 0 77%;
+}
+
+h2 {
+    width: 25%;
+}
+
+/* .section-title {
+    flex: 0 0 20%;
     color: var(--color-4);
-    size: 10vw;
+    size: 50px;
     justify-content: left;
     padding: 15px 20px;
     font-weight: bolder;
     font-size: 1.55vw;
-}
+} */
 
+.section-title {
+    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 25px auto 25px auto;
+    width: 50%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+}
 
 /* START OF HEADER SECTION */
 header {
@@ -92,32 +126,52 @@ header nav ul li a:hover {
     background-image: url("../images/blue-stars.jpg");
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
     background-attachment: fixed;
     background-position: 80%;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-aside {
+    width: 35%;
+    text-align: left;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+    justify-content: right;
+    display: flex;
 }
 
 .about h2 {
     color: var(--color-1);
 }
 
+.about img {
+    float: left;
+    /* max-width: 100%;
+    max-height: 100%; */
+}
+
 .about p {
     padding: 15px 20px;
     font-weight: bolder;
-    font-size: 1.4vw;
+    font-size: auto;
     color: var(--color-5);
 }
 
-.about-me img {
-    justify-content: left;
+.image {
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
 }
 
-.about-me h2 {
-    justify-content: right;
-}
 /* END OF ABOUT ME SECTION */
 
 
@@ -131,11 +185,21 @@ header nav ul li a:hover {
     justify-content: space-around;
 }
 
+.work h2 {
+    justify-content: left;
+}
+
 .project {
     margin: 20px;
     background: var(--secondary-color);
     color: var(--primary-color);
     flex: 1;
+    /* justify-content: right; */
+    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
 .project img {
@@ -146,42 +210,53 @@ header nav ul li a:hover {
     font-size: 28px;
 }
 
-.project-summary {
-    font-size: 17px;
+.project p {
+    color: var(--color-4);
+    font-weight: bold;
 }
+
+/* .project-summary {
+    font-size: 17px;
+} */
 /* END OF MY WORK SECTION */
 
 
 /* START OF CONTACT ME SECTION */
 .contact {
     background-color: var(--color-3);
+    width: 100%;
 }
 
 .contact h2 {
     color: var(--color-5);
+    justify-content: center;
 }
 
-.contact-info {
+/* .contact-info {
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
-    size: 1.55vh;
+    flex-direction: row;
+} */
+
+.contact-block {
+    display: block;
 }
 
 .contact-info {
-    display: float;
-    position: relative;
+    justify-content: center;
+    /* padding-bottom: 20px; */
+    text-align: center;
+    margin: 0 auto 10px auto;
+    width: 50%;
 }
 
 .contact-info span {
     color: var(--color-5);
-    justify-content: right;
 }
 
 .contact-info a {
     color:var(--color-1);
-    size: 1.55vh;
-    justify-content: right;
 }
 
 .contact-info a:hover {
